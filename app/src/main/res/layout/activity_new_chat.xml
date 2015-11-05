@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.balinasoft.cartalk.NewChat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#2196F3"
+        android:id="@+id/rl_new_chat_header">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_new_chat_back"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/new_chat"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/btn_new_chat_back"
+            android:id="@+id/tv_registration_header"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/btn_new_chat_find"
+            android:background="@drawable/et_style_border"
+            android:layout_centerVertical="true"
+            android:id="@+id/et_new_chat_find"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_new_chat_find"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_search"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_new_chat"
+        android:layout_below="@+id/rl_new_chat_header">
+
+
+        </ListView>
+
+</RelativeLayout>

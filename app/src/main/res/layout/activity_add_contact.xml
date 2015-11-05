@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.balinasoft.cartalk.ContactActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_add_contact_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#2196F3">
+
+        <Button
+            android:id="@+id/btn_add_contact_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_add_contact_header"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/btn_add_contact_back"
+            android:text="@string/add_contact"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_new_chat_find"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_add_contact_find"
+            android:background="@drawable/et_style_border"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_add_contact_find"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_search" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_add_contact_header"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

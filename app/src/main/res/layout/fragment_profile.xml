@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.balinasoft.cartalk.ProfileFragment"
+    android:background="#F3FAFE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_profile_fragment">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/iv_profil_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_profile_image"/>
+
+            <TextView
+                android:layout_below="@id/iv_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="16dp"
+                android:text="Ivanov Ivan Ivanovich"
+                android:id="@+id/tv_profile_fio"/>
+
+            <TextView
+                android:layout_below="@+id/tv_profile_fio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="16dp"
+                android:text="Ivan777"
+                android:id="@+id/tv_profile_login"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profile_login"
+                android:id="@+id/rl_profile_email">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/tv_profile_email"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_pero"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_profile_email_edit"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/et_profile_email"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_yes"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_profile_email_commit"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_profile_email"
+                android:id="@+id/rl_profile_phone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/tv_profile_phone"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_pero"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_profile_phone_edit"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/et_profile_phone"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_yes"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_profile_phone_commit"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/rl_profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/profile_fragment_auto"
+                android:id="@+id/tv_profile_auto"/>
+
+            <ListView
+                android:layout_below="@+id/tv_profile_auto"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_profile_auto">
+
+                </ListView>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lv_profile_auto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/add_auto"
+                android:layout_marginBottom="24dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_profile_add_auto"/>
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

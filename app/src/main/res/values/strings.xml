@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Cartalk</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="signin">Войти</string>
+    <string name="forgot_password">Забыли пароль</string>
+    <string name="registration">Регистрация</string>
+
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="header_forgot_activity_text">Восстановление пароля</string>
+    <string name="enter_email">E-mail</string>
+    <string name="send_password">Выслать пароль</string>
+
+    <string name="title_activity_registration">Registration</string>
+    <string name="header_registration_activity_text">Регистрация</string>
+    <string name="download_image">Загрузить\nфото</string>
+    <string name="input_fio">ФИО</string>
+    <string name="input_email">E-mail</string>
+    <string name="input_phone_number">Номер телефона</string>
+    <string name="input_login">Логин</string>
+    <string name="input_password">Пароль</string>
+    <string name="input_confirm_password">Подтвердите пароль</string>
+    <string name="data_for_auto">Данаые о автомобиле</string>
+    <string name="input_model_auto">Маркаи и модель авто</string>
+    <string name="input_numper_auto">Номер авто</string>
+    <string name="input_color_auto">Цвет</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="hello_world">Hello world!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_home_activity_text">CARTALK</string>
+    <string name="profile_fragment_auto">Автомобили:</string>
+
+    <string name="chat_spam">Пометить как спам</string>
+    <string name="title_activity_new_chat">NewChat</string>
+    <string name="new_chat">Новый чат</string>
+
+    <string name="title_activity_add_contact">AddContact</string>
+    <string name="add_contact">Добавить</string>
+
+    <string name="title_activity_chat">Chat</string>
+    <string name="input_text">Введите сообщение</string>
+    <string name="send_photo">Отправить фото</string>
+    <string name="send_audio">Отправить аудио</string>
+    <string name="send_video">Отправить видео</string>
+    <string name="add_member">Добавить участника</string>
+    <string name="to_leave_discussion">Покинуть беседу</string>
+</resources>
